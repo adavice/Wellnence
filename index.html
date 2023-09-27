@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Shadows+Into+Light+Two&amp;display=swap"/>
+    <title>Main</title>
+  </head>
+  <body>
+    <div class="page main">
+      <!-- HEADER-->
+            <header class="header">
+        <div class="header__container container"><a class="logo" href=""><img src="img/logo.svg" alt="logo"/></a>
+          <nav class="header__nav nav">
+             <a class="nav__link" href="">RECIPES</a>
+             <a class="nav__link nav__link--active" href="">HEALTH & WELLNESS</a>
+             <a class="nav__link" href="">CALCULATOR</a>
+          </nav>
+       <button id="login__icon">
+            <img src="./img/profile.svg">
+       </button>
+       <!-- THE FORM -->
+        <div id="account__block" >
+            <div id="close__form">+</div>
+         <!-- FORM(loged out state) -->
+            <form class="header__form ">
+              <input class="header__input" type="text" placeholder="User"/>
+              <input class="header__input" type="text" placeholder="Password"/>
+              <button class="header__btn btn" type="submit">Login</button>
+            </form>
+
+          <!-- FORM(logged in state) -->
+          <form class="header__profile">
+          <span class="account__username">--</span>
+          <span class="account__credits"><span id="user__credits">--</span> Credits left</span>
+          <button class="">Log out</button>
+           </form>
+        </div>
+              
+         
+        </div>
+      </header>
+      <!-- SLIDER-->
+      <div class="slider-wrap">
+        <div class="slider">
+          <div class="slider__item" style="background-image: url('img/slider1.jpg');">
+            <div class="slider__item-info">
+              <h3 class="slider__title">Beautiful, colorful, juicy,<br> sweet figs. </h3>
+              <p class="slider__text">You can find here lots of different Spinach<br> Fig Salads is made with fresh figs,<br> avocado, toasted walnuts, and<br> homemade balsamic vinaigrette for a<br> delicious fall salad that will fill you up.</p>
+            </div>
+          </div>
+          <div class="slider__item" style="background-image: url('img/slider2.jpg');">
+            <div class="slider__item-info">
+              <h3 class="slider__title">Here you can find tasty and<br> healthy variants for breakfast</h3>
+              <p class="slider__text">Jump to the Avocado Toast with Egg<br> Recipe or read on to see our tips,<br> including how to choose avocados!</p>
+            </div>
+          </div>
+          <div class="slider__item" style="background-image: url('img/slider3.jpg');">
+            <div class="slider__item-info">
+              <h3 class="slider__title">Healthy morning ideas<br> with porridge</h3>
+              <p class="slider__text">Start the day with a bowl of porridge for<br> a comforting, high-fibre breakfast to<br> keep you going. Jazz up your oats with<br> fresh fruit and nut toppings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MAIN-->
+      <main class="main">
+        <div class="container">
+          <section class="main__promo">
+            <h2 class="main__promo-title">Delicious and Quick Recipes</h2>
+            <p class="main__promo-text">2500+ easy-to-cook meals specially created by our chefs.</p>
+          </section>
+          <section class="main__section main__section--1">
+            <div class="recipe-card-list recipe-card-list--mini">
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe1.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Quick Beef Ragù<br> Spaghetti</h3>
+                  <p class="recipe-card__text">with Zucchini and Italian Seasonings</p><span class="recipe-card__kcal">770 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe2.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Cheesy Pork Sausage<br> Flatbreads</h3>
+                  <p class="recipe-card__text">with Roasted Pepper and Onion</p><span class="recipe-card__kcal">1000 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe3.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Apricot Balsamic-Glazed<br> Pork Tenderloin </h3>
+                  <p class="recipe-card__text">over Ginger Rice with Sesame Green Beans</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe4.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Refined sugar-free cakes<br> that never fail</h3>
+                  <p class="recipe-card__text">Meet our go-to recipes for the best<br> sugar-free baking!</p><span class="recipe-card__kcal">770 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe5.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Healthy baked sweet<br> potato and chickpeas</h3>
+                  <p class="recipe-card__text">This healthy vegetarian tray bake is a<br> delicious dinner option.</p><span class="recipe-card__kcal">1000 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe6.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Chicken-free chicken<br> parmigiana</h3>
+                  <p class="recipe-card__text">Vegetarian chicken parmigiana that tastes<br> just like the real thing.</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar sidebar--index">
+              <form class="sidebar__input-wrap">
+                <input class="sidebar__input" type="text" placeholder="Search"/>
+                <button class="sidebar__input-btn">Search</button>
+              </form>
+              <div class="sidebar__word-wrap"><a class="sidebar__word" href="">GLUTEN FREE</a><a class="sidebar__word" href="">LOW CARB</a><a class="sidebar__word" href="">VEGAN</a></div>
+              <div class="sidebar__word-wrap"><a class="sidebar__word" href="">ITALIAN</a><a class="sidebar__word" href="">FRENCH</a><a class="sidebar__word" href="">JAPANESE</a><a class="sidebar__word" href="">Chinese</a><a class="sidebar__word" href="">GREEK</a><a class="sidebar__word" href="">INDIAN</a><a class="sidebar__word" href="">ASIAN</a></div>
+              <div class="sidebar__word-wrap"><a class="sidebar__word" href="">PASTA</a><a class="sidebar__word" href="">MEAT</a><a class="sidebar__word" href="">RICE</a><a class="sidebar__word" href="">CHICKEN</a><a class="sidebar__word" href="">SALAD</a><a class="sidebar__word" href="">DESSERT</a><a class="sidebar__word" href="">CHEESE</a><a class="sidebar__word" href="">SALMON</a><a class="sidebar__word" href="">TOMATO</a></div>
+            </div>
+          </section>
+          <h2 class="main__title">Popular Articles</h2>
+          <section class="main__section main__section--2">
+            <div class="article__big"><img class="article__big-img" src="img/article-big1.jpg" alt="article"/>
+              <div class="article__big-info">
+                <h3 class="article__big-title">How to Measure Portion Sizes with your Hands</h3>
+                <p>A balanced diet is not only about eating the right kinds of foods but also about consuming them in the right amounts. Larger portions<br> may encourage over consumption, which, in turn, may lead to weight gain. However, it can sometimes be difficult to know what a<br> healthy portion is. This infographic provides some general tips to help you understand what a portion is for different foods.<br> Remember though, age, body size and physical activity level will all affect a person’s daily energy requirements.<br> Therefore, some individuals may require larger or smaller portions than recommended here.</p>
+              </div><a class="btn btn--arrow" href="">Read article</a>
+            </div>
+            <div class="sidebar sidebar--index-2">
+              <div class="article__small">
+                <div class="article__small-img-wrap"><img class="article__small-img" src="img/article10.jpg" alt="article"/></div>
+                <div class="article__small-info">
+                  <h3 class="article__small-title">A Quick Guide to Intuitive Eating</h3><a class="btn btn--arrow" href="">Read article</a>
+                </div>
+              </div>
+              <div class="article__small">
+                <div class="article__small-img-wrap"><img class="article__small-img" src="img/article5.jpg" alt="article"/></div>
+                <div class="article__small-info">
+                  <h3 class="article__small-title">Water balance, importance of good hydration</h3><a class="btn btn--arrow" href="">Read article</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <h2 class="main__recipes-title main__title">New Recipes</h2>
+          <p class="main__text">Discover some of our best new recipe ideas!  As much as we adore our favorites, creating new recipe ideas is a joy for us.<br> We’re constantly adding to your favorite collections - like breakfast and brunch ideas, easy dinner ideas, tasty dessert recipes and more.<br> Dig in and enjoy!  With love to you and your families. </p>
+          <section class="main__section main__section--3">
+            <div class="recipe-card-list recipe-card-list--big">
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe7.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Healthier chicken satay<br> stir-fry</h3>
+                  <p class="recipe-card__text">Using coconut milk means this chicken<br> satay stir-fry is still creamy but perfect!</p><span class="recipe-card__kcal">1680 kcal</span><span class="recipe-card__time">1 h 30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe8.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Red curry salmon<br> linguine</h3>
+                  <p class="recipe-card__text">This creamy dish blends the delicious<br> flavours of Thailand! </p><span class="recipe-card__kcal">1000 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe9.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Quick salmon pasta with<br> mint and lemon pesto</h3>
+                  <p class="recipe-card__text">Transform a traditional lasagne with this<br> recipe that uses grilled salmon!</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe10.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Creamy chicken piccata<br> pasta</h3>
+                  <p class="recipe-card__text">This creamy and cheesy chicken piccata<br> pasta ticks all the right boxes quick!</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe11.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Healthy Spinach<br> Salad</h3>
+                  <p class="recipe-card__text">We have the best healthy spinach salad<br> recipe for you!</p><span class="recipe-card__kcal">380 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe12.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Healthy Zucchini<br> Muffins</h3>
+                  <p class="recipe-card__text">Moist, fluffy and full of fiber, these muffins<br> with applesauce are on our regular rotation.</p><span class="recipe-card__kcal">1000 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe13.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Low Carb Chicken<br> Enchiladas</h3>
+                  <p class="recipe-card__text">These sound crazy good. it’s kind of like<br> cabbage roll gone Mexican!</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+              <div class="recipe-card">
+                <div class="recipe-card__img-wrap"><img class="recipe-card__img" src="img/recipe14.jpg" alt="recipe"/></div>
+                <div class="recipe-card__info">
+                  <h3 class="recipe-card__title">Instant Pot Yogurt</h3>
+                  <p class="recipe-card__text">Homemade Instant Pot yogurt comes out<br> just as store bought.</p><span class="recipe-card__kcal">710 kcal</span><span class="recipe-card__time">30 min</span><a class="btn btn--arrow" href="">Show recipe</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- FOOTER-->
+      <footer class="footer">
+        <div class="footer__container container"><a class="logo" href=""><img src="img/logo.svg" alt="logo"/></a>
+          <nav class="footer__nav nav">
+          <a class="nav__link" href="">RECIPES</a>
+            <a class="nav__link" href="">HEALTH & WELLNESS</a>
+            <a class="nav__link" href="">CALCULATOR</a>
+            <a class="nav__link" href="">CONTACT US</a></nav>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-container container"><a class="footer__bottom-link" href="">Privacy Policy</a><a class="footer__bottom-link" href="">Terms & Conditions</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
