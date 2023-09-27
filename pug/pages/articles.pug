@@ -1,0 +1,93 @@
+extends ../layouts/base
+
+block title
+  title Articles
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header2
+    // SLIDER
+    .slider-wrap
+      .slider
+        .slider__item(style="background-image: url('img/slider4.jpg');")
+          .slider__item-info
+            h3.slider__title Coconut oil for hair<br> shine
+            p.slider__text Tame your flyaways, add shine and smooth your hair with this luxurious balm. Delicately scented with coconut, a little goes a long way.
+        .slider__item(style="background-image: url('img/slider5.jpg');")
+          .slider__item-info
+            h3.slider__title 5 tips for starting a new<br> healthy life
+            p.slider__text Here are some expert tips for getting started<br> and following through on your goals
+        .slider__item(style="background-image: url('img/slider6.jpg');")
+          .slider__item-info
+            h3.slider__title Are You Busy?<br> Here's How To Stay Healthy
+            p.slider__text "Your health is important, so don’t<br> let a busy schedule stop you from<br> caring for yourself."
+    // MAIN
+    main.main
+      .container
+        h2.main__title Popular Articles
+        section.main__section.main__section--2
+          .article__big
+            .article__big-img-wrap
+              img(src="img/article-big1.jpg", alt="article").article__big-img
+            .article__big-info
+              h3.article__big-title How to Measure Portion Sizes with your Hands
+              p.article__big-text A balanced diet is not only about eating the right kinds of foods but also about consuming them in the right amounts. Larger portions<br> may encourage over consumption, which, in turn, may lead to weight gain. However, it can sometimes be difficult to know what a<br> healthy portion is. This infographic provides some general tips to help you understand what a portion is for different foods.<br> Remember though, age, body size and physical activity level will all affect a person’s daily energy requirements.<br> Therefore, some individuals may require larger or smaller portions than recommended here.
+            a(href="").btn.btn--arrow Read article
+          .sidebar.sidebar--index-2
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article4.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title A Quick Guide to Intuitive Eating
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article5.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Water balance, importance of good hydration
+                a(href="").btn.btn--arrow Read article
+        section.main__section.main__section--2
+          .article__big
+            .article__big-img-wrap
+              img(src="img/article2.jpg", alt="article").article__big-img
+            .article__big-info
+              h3.article__big-title Coconut Oil For Hair That Shines
+              p.article__big-text Coconut has been in the limelight for awhile now, with many health-conscious households keeping at least some form of this<br> versatile fruit in their pantries. While it’s obviously very popular as an ingredient in cooking, did you know that coconut oil can<br> also be used as a natural beauty product? In fact, many people swear by its benefits and the way that it makes their skin and hair feel. 
+            a(href="").btn.btn--arrow Read article
+          .sidebar.sidebar--index-2
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article6.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How To Buy The Best<br> Yoga Pants
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article7.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Tips For Clean Eating<br> On A Budget
+                a(href="").btn.btn--arrow Read article
+        section.main__section.main__section--2
+          .article__big
+            .article__big-img-wrap
+              img(src="img/article3.jpg", alt="article").article__big-img
+            .article__big-info
+              h3.article__big-title 5 Tips for Getting Into a Healthy Lifestyle
+              p.article__big-text Each year, new wellness trends emerge. Some will go on to become staples in our lives (hello quinoa!), while others are<br> something we only try once. These are a few of the wellness trends that we think you’ll be seeing in 2019!
+            a(href="").btn.btn--arrow Read article
+          .sidebar.sidebar--index-2
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article8.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How To Be More<br> Disciplined
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article9.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title 5 Wellness Trends You'll<br> See In 2019
+                a(href="").btn.btn--arrow Read article
+    // FOOTER
+    include ../sections/footer

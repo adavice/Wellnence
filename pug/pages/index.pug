@@ -1,0 +1,211 @@
+extends ../layouts/base
+
+block title
+  title Main
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header
+    // SLIDER
+    .slider-wrap
+      .slider
+        .slider__item(style="background-image: url('img/slider1.jpg');")
+          .slider__item-info
+            h3.slider__title Beautiful, colorful, juicy,<br> sweet figs. 
+            p.slider__text You can find here lots of different Spinach<br> Fig Salads is made with fresh figs,<br> avocado, toasted walnuts, and<br> homemade balsamic vinaigrette for a<br> delicious fall salad that will fill you up.
+        .slider__item(style="background-image: url('img/slider2.jpg');")
+          .slider__item-info
+            h3.slider__title Here you can find tasty and<br> healthy variants for breakfast
+            p.slider__text Jump to the Avocado Toast with Egg<br> Recipe or read on to see our tips,<br> including how to choose avocados!
+        .slider__item(style="background-image: url('img/slider3.jpg');")
+          .slider__item-info
+            h3.slider__title Healthy morning ideas<br> with porridge
+            p.slider__text Start the day with a bowl of porridge for<br> a comforting, high-fibre breakfast to<br> keep you going. Jazz up your oats with<br> fresh fruit and nut toppings.
+    // MAIN
+    main.main
+      .container
+        section.main__promo
+          h2.main__promo-title Delicious and Quick Recipes
+          p.main__promo-text 2500+ easy-to-cook meals specially created by our chefs.
+        section.main__section.main__section--1
+          .recipe-card-list.recipe-card-list--mini
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe1.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Quick Beef Ragù<br> Spaghetti
+                p.recipe-card__text with Zucchini and Italian Seasonings
+                span.recipe-card__kcal 770 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe2.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Cheesy Pork Sausage<br> Flatbreads
+                p.recipe-card__text with Roasted Pepper and Onion
+                span.recipe-card__kcal 1000 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe3.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Apricot Balsamic-Glazed<br> Pork Tenderloin 
+                p.recipe-card__text over Ginger Rice with Sesame Green Beans
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe4.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Refined sugar-free cakes<br> that never fail
+                p.recipe-card__text Meet our go-to recipes for the best<br> sugar-free baking!
+                span.recipe-card__kcal 770 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe5.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Healthy baked sweet<br> potato and chickpeas
+                p.recipe-card__text This healthy vegetarian tray bake is a<br> delicious dinner option.
+                span.recipe-card__kcal 1000 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe6.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Chicken-free chicken<br> parmigiana
+                p.recipe-card__text Vegetarian chicken parmigiana that tastes<br> just like the real thing.
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+          .sidebar.sidebar--index
+            form.sidebar__input-wrap
+              input.sidebar__input(type="text", placeholder="Search")
+              button.sidebar__input-btn Search
+            .sidebar__word-wrap
+              a.sidebar__word(href="") GLUTEN FREE
+              a.sidebar__word(href="") LOW CARB
+              a.sidebar__word(href="") VEGAN
+            .sidebar__word-wrap
+              a.sidebar__word(href="") ITALIAN
+              a.sidebar__word(href="") FRENCH
+              a.sidebar__word(href="") JAPANESE
+              a.sidebar__word(href="") Chinese
+              a.sidebar__word(href="") GREEK
+              a.sidebar__word(href="") INDIAN
+              a.sidebar__word(href="") ASIAN
+            .sidebar__word-wrap
+              a.sidebar__word(href="") PASTA
+              a.sidebar__word(href="") MEAT
+              a.sidebar__word(href="") RICE
+              a.sidebar__word(href="") CHICKEN
+              a.sidebar__word(href="") SALAD
+              a.sidebar__word(href="") DESSERT
+              a.sidebar__word(href="") CHEESE
+              a.sidebar__word(href="") SALMON
+              a.sidebar__word(href="") TOMATO
+        h2.main__title Popular Articles
+        section.main__section.main__section--2
+          .article__big
+            img.article__big-img(src="img/article-big1.jpg", alt="article")
+            .article__big-info
+              h3.article__big-title How to Measure Portion Sizes with your Hands
+              p A balanced diet is not only about eating the right kinds of foods but also about consuming them in the right amounts. Larger portions<br> may encourage over consumption, which, in turn, may lead to weight gain. However, it can sometimes be difficult to know what a<br> healthy portion is. This infographic provides some general tips to help you understand what a portion is for different foods.<br> Remember though, age, body size and physical activity level will all affect a person’s daily energy requirements.<br> Therefore, some individuals may require larger or smaller portions than recommended here.
+            a(href="").btn.btn--arrow Read article
+          .sidebar.sidebar--index-2
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article10.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title A Quick Guide to Intuitive Eating
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article5.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Water balance, importance of good hydration
+                a(href="").btn.btn--arrow Read article
+        h2.main__recipes-title.main__title New Recipes
+        p.main__text Discover some of our best new recipe ideas!  As much as we adore our favorites, creating new recipe ideas is a joy for us.<br> We’re constantly adding to your favorite collections - like breakfast and brunch ideas, easy dinner ideas, tasty dessert recipes and more.<br> Dig in and enjoy!  With love to you and your families. 
+        section.main__section.main__section--3
+          .recipe-card-list.recipe-card-list--big
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe7.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Healthier chicken satay<br> stir-fry
+                p.recipe-card__text Using coconut milk means this chicken<br> satay stir-fry is still creamy but perfect!
+                span.recipe-card__kcal 1680 kcal
+                span.recipe-card__time 1 h 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe8.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Red curry salmon<br> linguine
+                p.recipe-card__text This creamy dish blends the delicious<br> flavours of Thailand! 
+                span.recipe-card__kcal 1000 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe9.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Quick salmon pasta with<br> mint and lemon pesto
+                p.recipe-card__text Transform a traditional lasagne with this<br> recipe that uses grilled salmon!
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe10.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Creamy chicken piccata<br> pasta
+                p.recipe-card__text This creamy and cheesy chicken piccata<br> pasta ticks all the right boxes quick!
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe11.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Healthy Spinach<br> Salad
+                p.recipe-card__text We have the best healthy spinach salad<br> recipe for you!
+                span.recipe-card__kcal 380 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe12.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Healthy Zucchini<br> Muffins
+                p.recipe-card__text Moist, fluffy and full of fiber, these muffins<br> with applesauce are on our regular rotation.
+                span.recipe-card__kcal 1000 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe13.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Low Carb Chicken<br> Enchiladas
+                p.recipe-card__text These sound crazy good. it’s kind of like<br> cabbage roll gone Mexican!
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+            .recipe-card
+              .recipe-card__img-wrap
+                img.recipe-card__img(src="img/recipe14.jpg", alt="recipe")
+              .recipe-card__info
+                h3.recipe-card__title Instant Pot Yogurt
+                p.recipe-card__text Homemade Instant Pot yogurt comes out<br> just as store bought.
+                span.recipe-card__kcal 710 kcal
+                span.recipe-card__time 30 min
+                a.btn.btn--arrow(href="") Show recipe
+    // FOOTER
+    include ../sections/footer

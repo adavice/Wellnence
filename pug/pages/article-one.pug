@@ -1,0 +1,144 @@
+extends ../layouts/base
+
+block title
+  title Article one
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header2
+    // SLIDER
+    .slider-wrap
+      .slider
+        .slider__item(style="background-image: url('img/slider4.jpg');")
+          .slider__item-info
+            h3.slider__title Coconut oil for hair<br> shine
+            p.slider__text Tame your flyaways, add shine and smooth your hair with this luxurious balm. Delicately scented with coconut, a little goes a long way.
+        .slider__item(style="background-image: url('img/slider5.jpg');")
+          .slider__item-info
+            h3.slider__title 5 tips for starting a new<br> healthy life
+            p.slider__text Here are some expert tips for getting started<br> and following through on your goals
+        .slider__item(style="background-image: url('img/slider6.jpg');")
+          .slider__item-info
+            h3.slider__title Are You Busy?<br> Here's How To Stay Healthy
+            p.slider__text "Your health is important, so don’t<br> let a busy schedule stop you from<br> caring for yourself."
+    // MAIN
+    main.main
+      .container
+        h2.main__title Popular Articles
+        section.main__section.main__section--3
+          .article__big.article__big--one
+            img.article__big-img(src="img/article-big1.jpg", alt="article")
+            .article__big-info
+              h3.article__big-title How to Measure Portion Sizes with your Hands
+              p Obesity is a growing epidemic, as more people than ever are struggling to control their weight. Increased portion sizes are thought to contribute 
+                | to overeating and unwanted weight gain. Research indicates that many factors can influence how much you eat. People tend to eat almost all of 
+                | what they serve themselves. Therefore, controlling portion sizes can help prevent overindulging. Here are 9 tips to measure and control portion 
+                | sizes — both at home and on the go.
+            img.article__big-img(src="img/article-big2.jpg", alt="article")
+            .article__big-info
+              h3.article__big-title 1. Use Smaller Dinnerware
+              p Evidence suggests that sizes of plates, spoons and glasses can unconsciously influence how much food someone eats. For example, using large 
+                | plates can make food appear smaller — often leading to overeating. In one study, people using a large bowl ate 77% more pasta than those 
+                | using a medium-sized bowl. In another study, nutritional experts served themselves 31% more ice cream when given larger bowls and 14.5% 
+                | more when provided with larger serving spoons.
+              p Interestingly, most people who ate more due to large dishes were completely unaware of the change in portion size. Therefore, swapping your 
+                | usual plate, bowl or serving spoon for a smaller alternative can reduce the helping of food and prevent overeating. Most people feel just as full 
+                | having eaten from a smaller dish as from a large one.
+              h3.article__big-title 2. Use Your Plate as a Portion Guide
+              p If measuring or weighing food isn’t appealing, try using your plate or bowl as a portion control guide. This can help you determine the 
+                | optimal macronutrient ratio for a well-balanced meal.
+              p A rough guide for each meal is:
+              ul
+                li #[b Vegetables or salad:] Half a plate
+                li #[b High-quality protein:] Quarter of a plate — this includes meat, poultry, fish, eggs, dairy, tofu, beans and pulses
+                li #[b Complex carbs: Quarter] of a plate — such as whole grains and starchy vegetables
+                li #[b High-fat foods: Half a] tablespoon (7 grams) — including cheese, oils and butter
+              p Remember that this is a rough guide, as people have different dietary needs. For example, those who are more physically active often require 
+                | more food. As vegetables and salad are naturally low in calories but high in fiber and other nutrients, filling up on these may help you avoid 
+                | overeating calorie-dense foods. If you want extra guidance, some manufacturers sell portion-control plates.
+              h3.article__big-title 3. Use Your Hands as a Serving Guide
+              p Another way to gauge appropriate portion size without any measuring tools is by simply using your hands. As your hands usually correspond to 
+                | your body size, bigger people who require more food typically have bigger hands.
+                | A rough guide for each meal is:
+              ul
+                li #[b High-protein foods:] A palm-sized serving for women and two palm-sized portions for men — such as meat, fish, poultry and beans
+                li #[b Vegetables and salads:] A fist-sized portion for women and two fist-sized portions for men
+                li #[b High-carb foods:] One cupped-hand portion for women and two for men — such as whole grains and starchy vegetables
+                li #[b High-fat foods:] One thumb-sized portion for women and two for men — such as butter, oils and nuts
+              h3.article__big-title 4. Ask for a Half Portion When Eating Out
+              p Restaurants are notorious for serving large portions. In fact, restaurant serving sizes are, on average, about 2.5 times larger than standard 
+                | serving sizes — and up to a whopping eight times larger. If you are eating out, you can always ask for a half portion or a children’s dish. This will 
+                | save you a lot of calories and help prevent overeating. Alternatively, you could share a meal with someone or order a starter and side instead of
+                | a main dish. Other tips include ordering a side salad or vegetables, asking for sauces and dressings to be served separately and avoiding 
+                | buffet-style, all-you-can-eat restaurants where it’s very easy to overindulge.
+              h3.article__big-title 5. Start All Meals With a Glass of Water
+              p Drinking a glass of water up to 30 minutes before a meal will naturally aid portion control. Filling up on water will make you feel less hungry. 
+                | Being well hydrated also helps you distinguish between hunger and thirst. One study in middle-aged and older adults observed that drinking 
+                | 17 ounces (500 ml) of water before each meal resulted in a 44% greater decline in weight over 12 weeks, most likely due to reduced food intake.
+                | Similarly, when overweight and obese older adults drank 17 ounces (500 ml) of water 30 minutes before a meal, they consumed 13% fewer 
+                | calories without trying to make any changes. In another study in young normal-weight men, drinking a similar amount of water immediately 
+                | before a meal resulted in greater feelings of fullness and reduced food intake. Therefore, having a glass of water before each meal can help 
+                | prevent overeating and aid portion control.
+              h3.article__big-title 6.Take It Slowly
+              p Eating quickly makes you less aware of getting full — and therefore increases your likelihood of overeating. As your brain can take around 
+                | 20 minutes to register that you are full after eating, slowing down can reduce your total intake.
+              h3.article__big-title The Bottom Line
+              p Unwanted weight gain may start with large portion sizes. However, there are many practical steps you can take to control portions. These simple 
+                | changes have proven successful in reducing portions without compromising on taste or feelings of fullness. For example, measuring your food, 
+                | using smaller dishes, drinking water prior to meals and eating slowly can all reduce your risk of overeating. At the end of the day, portion control 
+                | is a quick fix that improves your quality of life and may prevent binging.
+            .article__big-arrows
+              a.article__big-arrow(href="")
+              a.article__big-arrow.article__big-arrow--right(href="")
+          .sidebar.sidebar--article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article4.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title A Quick Guide to Intuitive Eating
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article5.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Water balance, importance of good hydration
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article6.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How To Buy The Best<br> Yoga Pants
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article7.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Tips For Clean Eating<br> On A Budget
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article8.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How To Be More<br> Disciplined
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article9.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title 5 Wellness Trends You'll<br> See In 2019
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article2.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Coconut Oil For Hair That<br> Shines
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article3.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title 5 Tips for Getting Into<br> a Healthy Lifestyle
+                a(href="").btn.btn--arrow Read article
+    // FOOTER
+    include ../sections/footer

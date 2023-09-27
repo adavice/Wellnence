@@ -1,0 +1,52 @@
+// If logged in:
+// TODO: Insert a correct values here:
+
+var user = {
+	number: 38050576430155,
+	isAuthorized: true,
+	credits: 0,
+}
+
+
+// Cheching of login/profile window
+var login_window = document.getElementById('account__block')
+	if (login_window != null) {
+
+// pop up
+	document.getElementById('login__icon').addEventListener('click', function(){
+	document.getElementById('account__block').style.display = 'block'
+	document.getElementById('login__icon').style.display = 'none'});
+
+	document.getElementById('close__form').addEventListener('click', function(){
+	document.getElementById('account__block').style.display = 'none'
+	document.getElementById('login__icon').style.display = 'block'});
+
+
+// login/profile switch
+	if (user.isAuthorized == true) {
+	document.querySelector('.header__profile').style.display = 'flex';
+	document.querySelector('.header__form').style.display = 'none';
+
+	document.querySelector('.account__username').innerText = user.number;
+	document.getElementById('user__credits').innerText = user.credits;
+	} else {
+	document.querySelector('.header__form').style.display = 'flex';
+	document.querySelector('.header__profile').style.display = 'none';
+
+	// profile values
+	
+	}
+}
+
+// if there is a calc check
+var calc_window = document.getElementById('form01');
+if (calc_window != null) {
+		if (user.isAuthorized == true) {
+			document.querySelector('.login__alternate').style.display = 'none';
+			calc_window.style.display = 'block';
+		} else {
+			document.querySelector('.login__alternate').style.display = 'block';
+			calc_window.style.display = 'none';
+	}
+}
+

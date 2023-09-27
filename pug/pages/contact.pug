@@ -1,0 +1,23 @@
+extends ../layouts/base
+
+block title
+  title Contact
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header3
+    // CONTACT
+    section.contact
+      .contact__container.container
+        form.contact__form
+          h1.contact__title Contact us
+          input.contact__input(type="text", placeholder="First Name")
+          input.contact__input(type="text", placeholder="Last Name")
+          input.contact__input(type="text", placeholder="E-mail")
+          input.contact__input(type="text", placeholder="Phone number")
+          textarea.contact__textarea(placeholder="Message")
+          button.contact__btn.btn(type="submit") Submit
+        .picture.picture--contact
+          .picture__img(style="background-image: url('img/picture-contact.jpg');")
+            .picture__bg

@@ -1,0 +1,156 @@
+extends ../layouts/base
+
+block title
+  title Article one
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header2
+    // SLIDER
+    .slider-wrap
+      .slider
+        .slider__item(style="background-image: url('img/slider4.jpg');")
+          .slider__item-info
+            h3.slider__title Coconut oil for hair<br> shine
+            p.slider__text Tame your flyaways, add shine and smooth your hair with this luxurious balm. Delicately scented with coconut, a little goes a long way.
+        .slider__item(style="background-image: url('img/slider5.jpg');")
+          .slider__item-info
+            h3.slider__title 5 tips for starting a new<br> healthy life
+            p.slider__text Here are some expert tips for getting started<br> and following through on your goals
+        .slider__item(style="background-image: url('img/slider6.jpg');")
+          .slider__item-info
+            h3.slider__title Are You Busy?<br> Here's How To Stay Healthy
+            p.slider__text "Your health is important, so don’t<br> let a busy schedule stop you from<br> caring for yourself."
+    // MAIN
+    main.main
+      .container
+        h2.main__title Popular Articles
+        section.main__section.main__section--3
+          .article__big.article__big--one
+            img.article__big-img(src="img/article-one-6-1.jpg", alt="article")
+            .article__big-info
+              h3.article__big-title How To Be More Disciplined
+              p If you look at your life right now, what is the reason you are not as successful, happy, or healthy as you could be at this point in your life?
+                | Apart from many excuses, there is probably just one simple reason: Lack of self-discipline. You simply don´t do what you need to do to enjoy the 
+                | levels of success you want. If you think about it, what does it really take for you to be successful in all areas of your life?
+              p Chances are, it’s no secret. Everybody knows what it takes to get in shape, but how many people are? Everyone knows what to do to perform 
+                | better at their job, but how many people are willing to do it? Everyone knows which foods to avoid and which ones to eat, but most people keep 
+                | eating those chocolate chip muffins. In short, all the knowledge in the world is worth nothing if you don´t possess the self-discipline to use that 
+                | knowledge. Elbert Hubbard defined self-discipline as “the ability to do what you have to do, when you have to do it, whether you feel like it or not
+                | ” It is the one skill that is necessary above anything else to succeed in any endeavour. Success in life comes from the actions you take on a 
+                | consistent basis — and only self-discipline allows you to do that.
+            img.article__big-img(src="img/article-one-6-2.jpg", alt="article")
+            .article__big-info
+              h3.article__big-title HERE ARE 6 POWERFUL WAYS TO BUILD UNBREAKABLE SELF-DISCIPLINE:
+              h3.article__big-title 1. “IF IT’S TO BE, IT’S UP TO ME.” — WILLIAM JOHNSON
+              p No matter what your goals are in life, there is one great law that you need to obey in order to be successful: No one else is going to climb the 
+                | ladder of success for you. No one else is responsible for your health, wealth, happiness, or success. From the day you leave your parent´s 
+                | house and start to make your own choices, you are responsible for your life and the choices you make. You choose the job you work in, the 
+                | person you live with, and how much you exercise every day. Only you can choose how you spend your time, and the decisions you make on a 
+                | consistent basis will make or break your life. If you want a better life, you need to make better decisions. You can blame other people for your 
+                | lack of results or happiness all life long, but doesn´t change anything. Only you can change your life by changing the choices you make. Take 
+                | responsibility for everything in your life, even if you can´t directly influence it. Even if it´s not in your direct control, you can always choose how 
+                | you respond.
+              h3.article__big-title 2. THE BIG ENEMY OF SUCCESS
+              p According to motivational speaker Brian Tracy, the biggest enemy to success is the path of least resistance. If you choose what is fun and easy 
+                | over what is necessary, you will never reach the levels of success and happiness you are capable of achieving in your life. That´s because every 
+                | great victory requires great sacrifice. If success was easy, everybody would be successful. But because success in any area of your life requires 
+                | hard work and sacrifices, most people will never reach their full potential. Whenever you decide not to what you should be doing, you not only 
+                | waste your opportunity to grow as a person, but you also lose confidence in yourself. You start to see yourself as lazy and unsuccessful, and 
+                | that self-image will become a successful prophecy. To achieve any goal you have, there are only three things you need: A clear vision for what 
+                | it is you want, a plan to get there, and massive action consistently repeated over time! While the first two parts are the easy part of the equation, 
+                | most people struggle with the last part: Hard work. There is nothing that you can´t achieve with hard work, so it is necessary that you build the 
+                | habit of choosing what is hard and necessary over what is fun and easy to do. Doing this is probably the surest way to succeed in life.
+              h3.article__big-title 3. THINK LONGTERM
+              p To quote Abraham Lincoln, “The best way to predict the future is to create it.” If you ever wonder where you will be in 10 years from now, look at 
+                | your current life. What actions are you taking to make your goals reality? How many books are you reading to grow as a person, and how many 
+                | new things are you learning? Which people are you associating with? Are you putting in the effort necessary to achieve your goals today?
+              p People oftentimes think that there lives will suddenly change through some magical event in the future, but that is not the case. Your life changes 
+                | only to the extent that you change. If you are not happy with your current circumstances, are you taking actions to change them? If not, you are 
+                | just daydreaming. Nothing will ever change if you don´t change what you do daily. As Aristotle noted over 2000 years ago, “We are what we 
+                | repeatedly do. Excellence then, is not an act, but a habit.” A great way to actively create your future is to ask yourself: If I already achieved my 
+                | goals, how would I act on a daily basis? What books would I read, how often would I work out, and how would I spend my time at the office?
+                | Once you answer these questions, you know what to do. Act as if you were already successful.
+              h3.article__big-title 4. OBSTACLES ARE PART OF SUCCESS
+              p In life, nothing worth having comes easy. You have to make sacrifices in the form of time, effort, pain, and hard work if you want to succeed. 
+                | There will be many setbacks, and any time you get close to finally succeeding, there will be some more adversity testing how bad you really 
+                | want it. Only after passing one more test, and then another, will you be able to succeed. The great tragedy of life is that most people give up 
+                | right before achieving success. They already made it to the five yard line, and all they need is one final push to make the touchdown and bring 
+                | home the sweet victory. But right before they do that, there is one final obstacle standing in their way — one last failure that they need to 
+                | overcome. Way too many people give up right then and there, without realizing how close they are. If you just take one thing from this post, let 
+                | is be this: Whenever you encounter failure and adversity, keep going! Success is supposed to be hard because that´s what makes it so special. 
+                | If it was easy, anybody could do it. But it´s hard, and that´s your chance to separate yourself from the people that don´t want it as bad as you.
+                | The only way to grow as a person is by facing the biggest challenges in life and enduring long enough to succeed. No matter how long it takes 
+                | or how hard it gets, always remember the words of motivational speaker Les Brown: “It´s not over until I win!”
+              h3.article__big-title 5. REWRITE YOUR GOALS EVERY DAY
+              p To maximize your self-discipline every day, it is necessary that you keep the bigger picture in mind. Only by remembering why you do what you 
+                | do will you take the necessary actions and follow through even if it gets hard. After all, you don´t just work so hard for no reason. You have 
+                | specific goals that you want to achieve that make all the effort worth it. As Nietzsche said, “He who has a “why” to live for, can bear almost any 
+                | “how”.” I believe this to be absolutely true. If you know what you want to do, and you have enough reasons to do it, you will do whatever it takes.
+                | The problem is, we tend to get so caught up in working and achieving our goals that we forget why we started in the first place. We forget why 
+                | we do what we do and instead get overwhelmed by a seemingly endless to-do list. No wonder that most people seem to unexcited and even 
+                | bored with life: They have no goals to strive for! The easiest way to counter this problem is by rewriting your goals every day and imagining the 
+                | future as you want it. Every morning after waking up, write down the most important goals you have for your life. This will not only immediately 
+                | get you motivated and excited, but also crystal clear on what you need to do to succeed. Only when you are focused on your goals and your 
+                | vision for your life, you are able to make decisions that contribute to those goals.
+              h3.article__big-title 6. DECIDE IN ADVANCE THAT YOU WILL NEVER GIVE UP
+              p To make sure that you stay strong in the face of adversity, make sure to resolve in advance how you will respond once it occurs. You need to 
+                | have a plan for what to do when all hell breaks loose, or else it is too easy to just give up. When writing your goals, commit to making them 
+                | come true, no matter how hard it may be. Determine how you will respond to failures and setbacks so you can bounce back stronger and 
+                | better than ever before. If you make this commitment and never break it, you will succeed at anything you set your mind to. Maybe not 
+                | immediately, but definitely.
+            .article__big-arrows
+              a.article__big-arrow(href="")
+              a.article__big-arrow.article__big-arrow--right(href="")
+          .sidebar.sidebar--article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article-one-2-sidebar.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How to Measure Portion<br> Sizes with your Hands
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article4.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title A Quick Guide to Intuitive<br> Eating
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article5.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Water balance, importance<br> of good hydration
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article6.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title How To Buy The Best<br> Yoga Pants
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article-one-6-sidebar.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Tips For Clean Eating On<br> A Budget
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article9.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title 5 Wellness Trends You'll<br> See In 2019
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article2.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title Coconut Oil For Hair That<br> Shines
+                a(href="").btn.btn--arrow Read article
+            .article__small
+              .article__small-img-wrap
+                img.article__small-img(src="img/article3.jpg", alt="article")
+              .article__small-info
+                h3.article__small-title 5 Tips for Getting Into<br> a Healthy Lifestyle
+                a(href="").btn.btn--arrow Read article
+    // FOOTER
+    include ../sections/footer

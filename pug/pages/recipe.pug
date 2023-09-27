@@ -1,0 +1,66 @@
+extends ../layouts/base
+
+block title
+  title Recipe
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header
+    // RECIPE
+    section.recipe
+      .recipe__container.container
+        .picture.picture--recipe
+          .picture__img(style="background-image: url('img/recipe-img.jpg');")
+            .picture__bg
+        .recipe__text-wrap
+          h2.recipe__title.recipe__title--big-margin Easy Asian salmon tray bake
+          .recipe__word-wrap.sidebar__word-wrap
+              a.sidebar__word(href="") SALMON
+              a.sidebar__word(href="") RICE
+          p.recipe__text With a delicious mirin and sweet chilli marinade, this quick and easy<br> Asian-inspired salmon tray bake will be a new dinner winner.
+          h2.recipe__title-2 INGREDIENTS:
+          .recipe__ingredients
+            ul.recipe__ingredients-list
+              li.recipe__ingredients-item 1/4 cup honey
+              li.recipe__ingredients-item 3 cloves garlic, minced
+              li.recipe__ingredients-item 2 tablespoons reduced sodium soy sauce
+              li.recipe__ingredients-item 1 tablespoon seasoned rice vinegar
+              li.recipe__ingredients-item 1 tablespoon sesame oil
+              li.recipe__ingredients-item 2 pounds salmon
+              li.recipe__ingredients-item 1 teaspoon Sriracha, optional
+              li.recipe__ingredients-item 2 green onions, thinly sliced
+              li.recipe__ingredients-item Freshly ground black pepper, to taste
+              li.recipe__ingredients-item 1 tablespoon freshly grated ginger
+              li.recipe__ingredients-item 1/2 teaspoon sesame seeds
+            ul.recipe__ingredients-list-2
+              li.recipe__ingredients-item-2.recipe__ingredients-item-2--first
+                span.recipe__ingredients-title YIELDS
+                span.recipe__ingredients-text 4 pers
+              li.recipe__ingredients-item-2.recipe__ingredients-item-2--second
+                span.recipe__ingredients-title Preparation<br> time
+                span.recipe__ingredients-text 30 min
+              li.recipe__ingredients-item-2.recipe__ingredients-item-2--third
+                span.recipe__ingredients-title Calories per<br> serving 
+                span.recipe__ingredients-text 770 kcal
+      .recipe__bottom-container.container
+        .recipe__method
+          h2.recipe__bottom-title.recipe__title-2 METHOD:
+          ul.recipe__method-list
+            li.recipe__method-item 1. Preheat oven to 375 degrees F. Line a baking sheet with foil.
+            li.recipe__method-item 2. In a small bowl, whisk together honey, garlic, soy sauce, rice vinegar, sesame oil, ginger, Sriracha and pepper, to taste.
+            li.recipe__method-item 3. Place salmon onto the prepared baking sheet and fold up all 4 sides of the foil.<br> Spoon the honey mixture over the salmon. Fold the sides of the foil over the salmon,<br> covering completely and sealing the packet closed.
+            li.recipe__method-item 4. Place into oven and bake until cooked through, about 15-20 minutes.<br> Open the packet and broil for 2-3 minutes, or until caramelized and slightly charred.
+            li.recipe__method-item 5. Serve immediately, garnished with green onions and sesame seeds, if desired.
+          h2.recipe__title-2.recipe__bottom-title NOTES:
+          p.recipe__bottom-text Baking time may need to be adjusted depending on the thickness of the salmon.
+        .recipe__nutrition
+          h2.recipe__title-2.recipe__bottom-title Nutrition facts:
+          ul.recipe__nutrition-list
+            li.recipe__nutrition-item #[b Protein:] #[span 46.1 g]
+            li.recipe__nutrition-item #[b Fat:] #[span 17.9 g]
+            li.recipe__nutrition-item #[b Carbs:] #[span 20.7 g]
+            li.recipe__nutrition-item #[b Sodium:] #[span 368.7 mg]
+          a.recipe__nutrition-btn.btn(href="") Show all recipes
+    // FOOTER
+    include ../sections/footer

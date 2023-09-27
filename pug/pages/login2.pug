@@ -1,0 +1,25 @@
+extends ../layouts/base
+
+block title
+  title Login 2
+
+block content
+  div.page
+    // HEADER
+    include ../sections/header
+    // LOGIN 2
+    section.login
+      .login__container.container
+        .picture.picture--login
+          .picture__text-wrap
+            h2.picture__title GET ACCESS TO PREMIUM NOW:
+            p.picture__text Premium means unlimited access to tons of inspiring recipes<br> and all our in-depth knowledge base, nutrition, calories, healthy<br> diet plans, exclusive offers and even more. Why are we doing this?<br> Because the more you know about your body, about living the<br> healthy live, about cooking, the better you get at it. And hey,<br> we think living healthy life should be tasty and fun.<br> You deserve to live a long happy life! 
+            .picture__bg
+        .login__text-wrap-2
+          h2.login__title-2 GET ACCESS TO PREMIUM NOW:
+          input.login__input(type="phone", placeholder="Phone")
+          button.login__btn.btn Join now
+          p.login__text-2 This is a subscription service.
+          p.login__text-3 By clicking subscribe you now agree to the terms and that the<br> charges will be billed to your mobile account. Age 16+ only. 
+    // FOOTER
+    include ../sections/footer
